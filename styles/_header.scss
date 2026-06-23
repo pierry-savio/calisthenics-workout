@@ -1,0 +1,15 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 2px solid $text-low-opacity;
+
+    a{
+        @include resetTextDecorations();
+        color: white;
+        h1{
+            font-size: 25px;
+            font-weight: 950;
+        }
+    }
+}

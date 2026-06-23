@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calistenia [cliente]</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header-mobile">
+    <header>
         <nav>
-            <h1>Calistenia</h1>
-            <ul>
-                <a href=""><li>Início</li></a>
-                <a href=""><li>Treinos</li></a>
-                <a href=""><li>Contato</li></a>
+            <a href="#hero"><h1>CALISTENIA</h1></a>
+            <img src="./img/icons/menu.png" alt="Menu" id="menu_button">
+            <ul class="menu-pc">
+                <a href="#hero"><li>INÍCIO</li></a>
+                <a href="#workout"><li>TREINOS</li></a>
+                <a href="#contact"><li>CONTATO</li></a>
             </ul>
         </nav>
     </header>
+    <div class="menu-mobile closed" id="mobile_menu">
+        <ul>
+            <a href="#hero"><li>INÍCIO</li></a>
+            <a href="#workout"><li>TREINOS</li></a>
+            <a href="#contact"><li>CONTATO</li></a>
+            <p>feito por @pierry-savio para [usuário]</p>
+        </ul>
+    </div>
 
+    <main>
+        <!--TODO-->
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

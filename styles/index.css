@@ -2,16 +2,128 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-header.header-mobile nav {
-  background-color: rgb(5, 198, 121);
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+header a {
+  text-decoration: none;
+  list-style: none;
   color: white;
-  display: flex;
-  flex-direction: row;
+}
+header a h1 {
+  font-size: 25px;
+  font-weight: 950;
 }
 
-body {
-  height: 100vh;
-  background-color: black;
+header nav {
+  background-color: #ff6200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 25px 20px 25px;
+}
+header nav img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: block;
+  transition: 0.5s ease;
+}
+@media (min-width: 1200px) {
+  header nav img {
+    display: none;
+  }
+}
+header nav img.opened {
+  transform: rotate(90deg);
+}
+
+div.menu-mobile {
+  transform: translateY(70px);
+  z-index: 998;
+  display: block;
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+}
+div.menu-mobile ul {
+  background-color: #ff6200;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+div.menu-mobile ul a {
+  text-decoration: none;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 800;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+div.menu-mobile ul a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+div.menu-mobile ul p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  text-justify: center;
+}
+div.menu-mobile {
+  transition: 0.5s ease;
+}
+
+@media (min-width: 1200px) {
+  div.menu-mobile {
+    display: none;
+  }
+}
+div.menu-mobile.closed {
+  transform: translateY(-160px);
+}
+
+header ul.menu-pc {
+  display: none;
+}
+@media (min-width: 1200px) {
+  header nav {
+    padding: 20px 50px 20px 50px;
+  }
+  header nav ul.menu-pc {
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 100px;
+  }
+  header nav ul.menu-pc a {
+    text-decoration: none;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+  }
+  header nav ul.menu-pc a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+  }
+}
+
+div.line {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.4);
 }/*# sourceMappingURL=index.css.map */
