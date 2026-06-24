@@ -126,8 +126,7 @@ header ul.menu-pc {
 }
 
 section.hero {
-  padding: 100px 25px 50px 25px;
-  padding-top: 100px;
+  padding: 100px 25px 100px 25px;
   background-color: #151515;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -149,6 +148,11 @@ section.hero div.hero-content div.section-title-container h2 {
 }
 section.hero div.hero-content div.section-title-container div.line {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 1200px) {
+  section.hero div.hero-content div.section-title-container h2 {
+    font-size: 46px;
+  }
 }
 section.hero div.hero-content p {
   color: rgba(255, 255, 255, 0.5);
@@ -184,16 +188,84 @@ section.hero div.hero-content a button:active {
   section.hero div.hero-content {
     gap: 100px;
   }
-  section.hero div.hero-content div.section-title-container h2 {
-    font-size: 46px;
-  }
-  section.hero div.hero-content div.section-title-container div.line {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  }
   section.hero div.hero-content p {
     font-size: 28px;
     line-height: 40px;
   }
+}
+
+section.workout {
+  padding: 100px 25px 100px 25px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+section.workout div.section-title-container h2 {
+  color: white;
+  font-size: 26px;
+  font-weight: 900;
+}
+section.workout div.section-title-container div.line {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 1200px) {
+  section.workout div.section-title-container h2 {
+    font-size: 46px;
+  }
+}
+section.workout div.days-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+section.workout div.days-container div.day {
+  background-color: #ae00e0;
+  box-shadow: 0 0 0px 0 #8200a7;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+section.workout div.days-container div.day img {
+  width: 100%;
+}
+section.workout div.days-container div.day p {
+  font-size: 18px;
+  text-align: center;
+  text-justify: center;
+  font-weight: 900;
+  color: white;
+  padding: 10px 0 10px 0;
+}
+section.workout div.days-container div.day:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 14px 0 #d749ff;
+  opacity: 1;
+}
+section.workout div.days-container div.day.not-included {
+  filter: grayscale(100%);
+  cursor: default;
+}
+section.workout div.days-container div.day.not-included:hover {
+  transform: scale(1);
+  box-shadow: 0 0 0 0 #8200a7;
+  opacity: 0.7;
+}
+@media (min-width: 900px) {
+  section.workout div.days-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  section.workout div.days-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 div.line {

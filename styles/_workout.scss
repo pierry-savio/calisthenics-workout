@@ -1,0 +1,63 @@
+section.workout{
+    padding: 100px 25px 100px 25px;
+    background-color: $mid-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    div.section-title-container{
+        @include sectionTitle();
+    }
+
+    div.days-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    
+        div.day{
+            background-color: $purple;
+            box-shadow: 0 0 0px 0 $dark-purple;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+            opacity: 0.70;
+            transition: 0.3s ease;
+
+            img{
+                width: 100%;
+            }
+            p{
+                font-size: 18px;
+                text-align: center;
+                text-justify: center;
+                font-weight: 900;
+                color: white;
+                padding: 10px 0 10px 0;
+            }
+
+            &:hover{
+                transform: scale(1.02);
+                box-shadow: 0 0 14px 0 $light-purple;
+                opacity: 1;
+            }
+        }
+
+        div.day.not-included{
+            filter: grayscale(100%);
+            cursor: default;
+
+            &:hover{
+                transform: scale(1);
+                box-shadow: 0 0 0 0 $dark-purple;
+                opacity: 0.70;
+            }
+        }
+        @media (min-width: 900px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 1200px){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

@@ -2,3 +2,20 @@
     text-decoration: none;
     list-style: none;
 }
+
+@mixin sectionTitle(){
+    h2{
+        color: white;
+        font-size: 26px;
+        font-weight: 900;
+    }
+    div.line{
+        border-bottom: 2px solid $text-low-opacity;
+    }
+
+    @media (min-width: 1200px){
+        h2{
+            font-size: 46px;
+        }
+    }
+}

@@ -1,7 +1,6 @@
 section.hero{
     
-    padding: 100px 25px 50px 25px;
-    padding-top: 100px;
+    padding: 100px 25px 100px 25px;
     background-color: $dark-gray;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -19,14 +18,7 @@ section.hero{
         gap: 35px;
 
         div.section-title-container{
-            h2{
-                color: white;
-                font-size: 26px;
-                font-weight: 900;
-            }
-            div.line{
-                border-bottom: 2px solid $text-low-opacity;
-            }
+            @include sectionTitle();
         }
 
         p{
@@ -68,15 +60,6 @@ section.hero{
 
         div.hero-content{
             gap: 100px;
-
-            div.section-title-container{
-                h2{
-                    font-size: 46px;
-                }
-                div.line{
-                    border-bottom: 2px solid $text-low-opacity;
-                }
-            }
 
             p{
                 font-size: 28px;
