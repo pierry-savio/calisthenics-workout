@@ -1,8 +1,9 @@
 header{
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 999;
-    border-bottom: 2px solid $text-low-opacity;
+    border-bottom: 4px solid white;
 
     a{
         @include resetTextDecorations();

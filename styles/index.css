@@ -10,9 +10,10 @@
 
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid white;
 }
 header a {
   text-decoration: none;
@@ -49,6 +50,8 @@ header nav img.opened {
 }
 
 div.menu-mobile {
+  position: fixed;
+  top: 0;
   transform: translateY(70px);
   z-index: 998;
   display: block;
@@ -90,7 +93,7 @@ div.menu-mobile {
   }
 }
 div.menu-mobile.closed {
-  transform: translateY(-160px);
+  transform: translateY(-145px);
 }
 
 header ul.menu-pc {
@@ -122,8 +125,84 @@ header ul.menu-pc {
   }
 }
 
+section.hero {
+  padding: 100px 25px 50px 25px;
+  padding-top: 100px;
+  background-color: #151515;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+section.hero img {
+  width: 100%;
+  border-radius: 8px;
+}
+section.hero div.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+section.hero div.hero-content div.section-title-container h2 {
+  color: white;
+  font-size: 26px;
+  font-weight: 900;
+}
+section.hero div.hero-content div.section-title-container div.line {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+section.hero div.hero-content p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.hero div.hero-content a button {
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border: none;
+  font-size: 26px;
+  font-weight: 900;
+  background-color: #ae00e0;
+  box-shadow: 0 10px 0 0 #8200a7;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+section.hero div.hero-content a button:hover {
+  background-color: #d749ff;
+}
+section.hero div.hero-content a button:active {
+  box-shadow: 0 0 0 0 #8200a7;
+  transform: translateY(10px);
+}
+@media (min-width: 1200px) {
+  section.hero {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  section.hero div.hero-content {
+    gap: 100px;
+  }
+  section.hero div.hero-content div.section-title-container h2 {
+    font-size: 46px;
+  }
+  section.hero div.hero-content div.section-title-container div.line {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  section.hero div.hero-content p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
 div.line {
   height: 1px;
   width: 100%;
   border-bottom: 1px solid rgba(21, 21, 21, 0.4);
+  border-radius: 50px;
+}
+
+span.highlight {
+  color: #ff6200;
 }/*# sourceMappingURL=index.css.map */

@@ -27,6 +27,8 @@ header{
 }
 
 div.menu-mobile{
+    position: fixed;
+    top: 0;
     transform: translateY(70px);
     z-index: 998;
     display: block;
@@ -69,5 +71,5 @@ div.menu-mobile{
 }
 
 div.menu-mobile.closed{
-    transform: translateY(-160px);
+    transform: translateY(-145px);
 }

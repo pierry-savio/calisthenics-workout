@@ -1,0 +1,87 @@
+section.hero{
+    
+    padding: 100px 25px 50px 25px;
+    padding-top: 100px;
+    background-color: $dark-gray;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+
+    img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    div.hero-content{
+
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+        div.section-title-container{
+            h2{
+                color: white;
+                font-size: 26px;
+                font-weight: 900;
+            }
+            div.line{
+                border-bottom: 2px solid $text-low-opacity;
+            }
+        }
+
+        p{
+            color: $text-low-opacity;
+            text-align: justify;
+            font-size: 18px;
+            line-height: 25px;   
+        }
+
+        a{
+            button{
+                cursor: pointer;
+                width: 100%;
+                color: white;
+                border: none;
+                font-size: 26px;
+                font-weight: 900;
+                background-color: $purple;
+                box-shadow: 0 10px 0 0 $dark-purple;
+                padding: 15px;
+                border-radius: 8px;
+                transition: 0.2s ease;
+
+                &:hover{
+                    background-color: $light-purple;
+                }
+
+                &:active{
+                    box-shadow: 0 0 0 0 $dark-purple;
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px){
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+
+        div.hero-content{
+            gap: 100px;
+
+            div.section-title-container{
+                h2{
+                    font-size: 46px;
+                }
+                div.line{
+                    border-bottom: 2px solid $text-low-opacity;
+                }
+            }
+
+            p{
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+    }
+}

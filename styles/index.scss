@@ -15,11 +15,17 @@
 @import './header';
 @import './header-mobile';
 @import './header-pc';
+@import './hero';
 
 //LINE
 div.line{
     height: 1px;
     width: 100%;
     border-bottom: 1px solid $dark-low-opacity;
+    border-radius: 50px;
 }
 
+//HIHGLIGHT
+span.highlight{
+    color: $orange;
+}
