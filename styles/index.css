@@ -264,6 +264,122 @@ section.workout div.days-container div.day.not-included:hover {
   }
 }
 
+section.contact {
+  padding: 100px 25px 100px 25px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+section.contact div.section-title-container h2 {
+  color: white;
+  font-size: 26px;
+  font-weight: 900;
+}
+section.contact div.section-title-container div.line {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 1200px) {
+  section.contact div.section-title-container h2 {
+    font-size: 46px;
+  }
+}
+section.contact p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.contact div.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section.contact div.contact-container a {
+  text-decoration: none;
+  list-style: none;
+}
+section.contact div.contact-container a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section.contact div.contact-container a button img {
+  width: 30px;
+}
+section.contact div.contact-container a button.whatsapp-btn {
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border: none;
+  font-size: 26px;
+  font-weight: 900;
+  background-color: #53ae54;
+  box-shadow: 0 10px 0 0 #237c24;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+section.contact div.contact-container a button.whatsapp-btn:hover {
+  background-color: #75d176;
+}
+section.contact div.contact-container a button.whatsapp-btn:active {
+  box-shadow: 0 0 0 0 #237c24;
+  transform: translateY(10px);
+}
+section.contact div.contact-container a button.email-btn {
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border: none;
+  font-size: 26px;
+  font-weight: 900;
+  background-color: #38b6ff;
+  box-shadow: 0 10px 0 0 #0075b9;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+section.contact div.contact-container a button.email-btn:hover {
+  background-color: #5cc3ff;
+}
+section.contact div.contact-container a button.email-btn:active {
+  box-shadow: 0 0 0 0 #0075b9;
+  transform: translateY(10px);
+}
+section.contact div.contact-container a button.instagram-btn {
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border: none;
+  font-size: 26px;
+  font-weight: 900;
+  background-color: #ae00e0;
+  box-shadow: 0 10px 0 0 #8200a7;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+section.contact div.contact-container a button.instagram-btn:hover {
+  background-color: #d749ff;
+}
+section.contact div.contact-container a button.instagram-btn:active {
+  box-shadow: 0 0 0 0 #8200a7;
+  transform: translateY(10px);
+}
+
+/*
+
+<div class="contact-container">
+    <a href="">
+        <button>
+            <img src="./img/icons/whatsapp.png" alt="WhatsApp">
+            WHATSAPP
+        </button>
+    </a>
+
+*/
 html {
   scroll-behavior: smooth;
 }

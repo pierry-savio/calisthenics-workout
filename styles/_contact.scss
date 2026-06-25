@@ -1,0 +1,53 @@
+section.contact{
+    padding: 100px 25px 100px 25px;
+    background-color: $dark-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    div.section-title-container{
+        @include sectionTitle();
+    }
+
+    p{
+        color: $text-low-opacity;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    div.contact-container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        a{
+            @include resetTextDecorations();
+
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                img{
+                    width: 30px;
+                }
+            }
+            button.whatsapp-btn  {@include button(#53ae54, #237c24, #75d176);}
+            button.email-btn     {@include button(#38b6ff, #0075b9, #5cc3ff);}
+            button.instagram-btn {@include button($purple, $dark-purple, $light-purple);}
+        }
+    }
+}
+
+/*
+
+<div class="contact-container">
+    <a href="">
+        <button>
+            <img src="./img/icons/whatsapp.png" alt="WhatsApp">
+            WHATSAPP
+        </button>
+    </a>
+
+*/

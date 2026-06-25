@@ -30,26 +30,7 @@ section.hero{
 
         a{
             button{
-                cursor: pointer;
-                width: 100%;
-                color: white;
-                border: none;
-                font-size: 26px;
-                font-weight: 900;
-                background-color: $purple;
-                box-shadow: 0 10px 0 0 $dark-purple;
-                padding: 15px;
-                border-radius: 8px;
-                transition: 0.2s ease;
-
-                &:hover{
-                    background-color: $light-purple;
-                }
-
-                &:active{
-                    box-shadow: 0 0 0 0 $dark-purple;
-                    transform: translateY(10px);
-                }
+                @include button($purple, $dark-purple, $light-purple);
             }
         }
     }
