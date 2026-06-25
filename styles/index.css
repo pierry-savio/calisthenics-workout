@@ -391,6 +391,14 @@ section.contact div.contact-container a button.instagram-btn:active {
     </a>
 
 */
+footer {
+  text-align: center;
+  text-justify: center;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #252525;
+  padding: 40px;
+}
+
 html {
   scroll-behavior: smooth;
 }
