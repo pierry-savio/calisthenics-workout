@@ -13,15 +13,24 @@
 }
 
 //IMPORTS
+
+//Tools
 @import './variables';
 @import './functions';
+
+//Header
 @import './header';
 @import './header-mobile';
 @import './header-pc';
+
+//Landing page
 @import './landing-page/hero';
 @import './landing-page/workout';
 @import './landing-page/contact';
 @import './landing-page/footer';
+
+//Days
+@import './days/day-main';
 
 html{
     scroll-behavior: smooth;
