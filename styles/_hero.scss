@@ -4,7 +4,7 @@ section.hero{
     background-color: $dark-gray;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+    gap: 35px;
 
     img{
         width: 100%;
@@ -59,7 +59,7 @@ section.hero{
         place-items: center;
 
         div.hero-content{
-            gap: 100px;
+            gap: 40px;
 
             p{
                 font-size: 28px;
