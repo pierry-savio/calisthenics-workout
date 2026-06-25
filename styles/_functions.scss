@@ -19,3 +19,26 @@
         }
     }
 }
+
+@mixin button($colorBg, $colorBoxShadow, $colorHover){
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 26px;
+    font-weight: 900;
+    background-color: $colorBg;
+    box-shadow: 0 10px 0 0 $colorBoxShadow;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+
+    &:hover{
+        background-color: $colorHover;
+    }
+
+    &:active{
+        box-shadow: 0 0 0 0 $colorBoxShadow;
+        transform: translateY(10px);
+    }
+}
