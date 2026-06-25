@@ -18,10 +18,10 @@
 @import './header';
 @import './header-mobile';
 @import './header-pc';
-@import './hero';
-@import './workout';
-@import './contact';
-@import './footer';
+@import './landing-page/hero';
+@import './landing-page/workout';
+@import './landing-page/contact';
+@import './landing-page/footer';
 
 html{
     scroll-behavior: smooth;
