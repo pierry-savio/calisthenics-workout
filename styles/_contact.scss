@@ -19,6 +19,10 @@ section.contact{
     div.contact-container{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        max-width: 700px;
+        justify-self: center;
+        align-self: center;
         gap: 25px;
 
         a{
@@ -36,6 +40,14 @@ section.contact{
             button.whatsapp-btn  {@include button(#53ae54, #237c24, #75d176);}
             button.email-btn     {@include button(#38b6ff, #0075b9, #5cc3ff);}
             button.instagram-btn {@include button($purple, $dark-purple, $light-purple);}
+        }
+    }
+
+    @media (min-width: 1200px){
+        p{
+            font-size: 28px;
+            line-height: 40px;
+            text-align: center;
         }
     }
 }

@@ -293,6 +293,10 @@ section.contact p {
 section.contact div.contact-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  justify-self: center;
+  align-self: center;
   gap: 25px;
 }
 section.contact div.contact-container a {
@@ -367,6 +371,13 @@ section.contact div.contact-container a button.instagram-btn:hover {
 section.contact div.contact-container a button.instagram-btn:active {
   box-shadow: 0 0 0 0 #8200a7;
   transform: translateY(10px);
+}
+@media (min-width: 1200px) {
+  section.contact p {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+  }
 }
 
 /*
