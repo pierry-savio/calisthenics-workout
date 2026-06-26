@@ -75,36 +75,36 @@ else{
 
 monday_btn.addEventListener('click', () => {
     if (monday){
-        window.location.href = "../pages/monday.html";
+        window.location.href = "./monday.html";
     }
 })
 
 tuesday_btn.addEventListener('click', () => {
     if (tuesday){
-        window.location.href = "../pages/tuesday.html";
+        window.location.href = "./tuesday.html";
     }
 })
 
 wednesday_btn.addEventListener('click', () => {
     if (wednesday){
-        window.location.href = "../pages/wednesday.html";
+        window.location.href = "./wednesday.html";
     }
 })
 
 thursday_btn.addEventListener('click', () => {
     if (thursday){
-        window.location.href = "../pages/thursday.html";
+        window.location.href = "./thursday.html";
     }
 })
 
 friday_btn.addEventListener('click', () => {
     if (friday){
-        window.location.href = "../pages/friday.html";
+        window.location.href = "./friday.html";
     }
 })
 
 saturday_btn.addEventListener('click', () => {
     if (saturday){
-        window.location.href = "../pages/saturday.html";
+        window.location.href = "./saturday.html";
     }
 })
