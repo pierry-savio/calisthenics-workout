@@ -101,6 +101,7 @@ previous_button.addEventListener("click", () =>{
     updateTimerTime();
     paused = true;
     passedTime = 0;
+    pause_button_icon.src = "../img/icons/play.png";
 });
 
 next_button.addEventListener("click", () =>{
@@ -114,6 +115,7 @@ next_button.addEventListener("click", () =>{
     updateTimerTime();
     paused = true;
     passedTime = 0;
+    pause_button_icon.src = "../img/icons/play.png";
 });
 
 //CONTAINERS
