@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html#hero"><h1>CALISTENIA</h1></a>
+            <img src="../img/icons/menu.png" alt="Menu" id="menu_button">
+            <ul class="menu-pc">
+                <a href="./index.html#hero"><li>INÍCIO</li></a>
+                <a href="./index.html#workout"><li>TREINOS</li></a>
+                <a href="./index.html#contact"><li>CONTATO</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-mobile closed" id="mobile_menu">
+        <ul>
+            <a href="./index.html#hero"><li>INÍCIO</li></a>
+            <a href="./index.html#workout"><li>TREINOS</li></a>
+            <a href="./index.html#contact"><li>CONTATO</li></a>
+            <p>feito por @pierry-savio para [usuário]</p>
+        </ul>
+    </div>
+
+    <main class="day-main">
+        <div class="video-container">
+            <iframe
+                id="video"
+                width="960" 
+                height="540" 
+                src="https://www.youtube.com/embed/LuzOKmcW7BQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+            <p class="display" id="display">1 / 10</p>
+        </div>
+        <div class="content-container">
+            <div class="exercise-container" id="exercise_container">
+                <h2 id="exerciseName">FLEXÃO DIAMANTE</h2>
+                <p id="exerciseRepetition">10 REPETIÇÕES</p>
+            </div>
+
+            <div class="timer-container closed" id="timer_container">
+                <h3>Descanso</h3>
+                <h2 id="timer_time">00:30</h2>
+                <div class="timer-buttons-container">
+                    <button id="repeat_button"> <img src="../img/icons/repeat.png" alt="Reiniciar"></button>
+                    <button id="pause_button"><img src="../img/icons/play.png" alt="Começar" id="pause_button_icon"></button>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button class="previous" id="previous_button">VOLTAR</button>
+                <button class="next" id="next_button">PRÓXIMO</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../scripts/wednesday.js"></script>
+</body>
+</html>
