@@ -40,6 +40,39 @@ const exerciseNames =
     "Bicicleta"
 ];
 
+const restUrl = "https://www.youtube.com/embed/J0shA9J-4Nc?si=lJ4MEqn3A4Q9Acxy";
+const exerciseVideos = 
+[
+    //Warm-up
+    "https://www.youtube.com/embed/J54MUf4HKjY?si=lyOx5BN0GYEoHG4K",restUrl,
+    "https://www.youtube.com/embed/fnDfukH5t4Q?si=XzSDi814dpa3eaxe",restUrl,
+    "https://www.youtube.com/embed/WOCi4gi-9Pg?si=jIbnEk0a165fXkVO",restUrl,
+    "https://www.youtube.com/embed/0leKftMd3Rk?si=fsTUA-2WoT5UORzS",restUrl,
+    "https://www.youtube.com/embed/_xSYGuvd19k?si=AP2zLP4K8C83jOIH",restUrl,
+
+    //Work-out
+    "https://www.youtube.com/embed/TvHKKSpnXbA?si=Z3ad3VbKXOoWkocf",restUrl,
+    "https://www.youtube.com/embed/TvHKKSpnXbA?si=Z3ad3VbKXOoWkocf",restUrl,
+    "https://www.youtube.com/embed/_xSYGuvd19k?si=AP2zLP4K8C83jOIH",restUrl,
+    "https://www.youtube.com/embed/_xSYGuvd19k?si=AP2zLP4K8C83jOIH",restUrl,
+    "https://www.youtube.com/embed/V8nX8nsjpws?si=Ua_Ba86wZygCdKyx",restUrl,
+    "https://www.youtube.com/embed/V8nX8nsjpws?si=Ua_Ba86wZygCdKyx",restUrl,
+    "https://www.youtube.com/embed/V8nX8nsjpws?si=Ua_Ba86wZygCdKyx",restUrl,
+    "https://www.youtube.com/embed/mfkfUkj24co?si=EWGVN8Jj2NQvGJC_",restUrl,
+    "https://www.youtube.com/embed/mfkfUkj24co?si=EWGVN8Jj2NQvGJC_",restUrl,
+    "https://www.youtube.com/embed/mfkfUkj24co?si=EWGVN8Jj2NQvGJC_",restUrl,
+    "https://www.youtube.com/embed/mfkfUkj24co?si=EWGVN8Jj2NQvGJC_",restUrl,
+    "https://www.youtube.com/embed/aIa3dsPiBDU?si=gD6pQ2FqyAlB3MPK",restUrl,
+    "https://www.youtube.com/embed/aIa3dsPiBDU?si=gD6pQ2FqyAlB3MPK",restUrl,
+    "https://www.youtube.com/embed/LT_nelifZ_k?si=7Gyx8fkepdI5_eft",restUrl,
+    "https://www.youtube.com/embed/LT_nelifZ_k?si=7Gyx8fkepdI5_eft",restUrl,
+    "https://www.youtube.com/embed/T1VitIWAqHg?si=isdRTJUMbQPOli0-",restUrl,
+    "https://www.youtube.com/embed/T1VitIWAqHg?si=isdRTJUMbQPOli0-",restUrl,
+    "https://www.youtube.com/embed/T1VitIWAqHg?si=isdRTJUMbQPOli0-",restUrl,
+    "https://www.youtube.com/embed/T1VitIWAqHg?si=isdRTJUMbQPOli0-",restUrl,
+    "https://www.youtube.com/embed/CDNWOPZ6TBs?si=WNT5NFGi-FUbLxgq",restUrl
+];
+
 const exerciseRepetitions = 
 [
     //Warm-up repetitions
@@ -69,15 +102,6 @@ const exerciseRepetitions =
     "15 Repetições",
     "15 Repetições",
     "10 Minutos"
-];
-const restUrl = "https://www.youtube.com/embed/J0shA9J-4Nc?si=lJ4MEqn3A4Q9Acxy";
-const exerciseVideos = 
-[
-    "https://www.youtube.com/embed/J54MUf4HKjY?si=lyOx5BN0GYEoHG4K",
-    restUrl,
-    "https://www.youtube.com/embed/fnDfukH5t4Q?si=XzSDi814dpa3eaxe",
-    restUrl
-
 ];
 
 //ONLY IN SECONDS
