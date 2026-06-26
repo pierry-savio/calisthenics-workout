@@ -212,7 +212,7 @@ previous_button.addEventListener("click", () =>{
 
 next_button.addEventListener("click", () =>{
     if (currentExercise > exercisesLength-2){
-        window.location.href = "./index.html#hero";
+        window.location.href = "./workout-finished.html";
     }
     currentExercise++;
     updateDisplay();

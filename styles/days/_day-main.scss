@@ -65,10 +65,11 @@ main.day-main{
             overflow: hidden;
             border-radius: 8px;
             width: 100%;
+            box-shadow: 10px 10px 10px 0 $dark-gray;
 
             h3{
                 font-size: 23px;
-                padding: 10px;
+                padding-top: 10px;
                 color: $text-low-opacity
             }
         

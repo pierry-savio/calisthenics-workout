@@ -460,10 +460,11 @@ main.day-main div.content-container div.timer-container {
   overflow: hidden;
   border-radius: 8px;
   width: 100%;
+  box-shadow: 10px 10px 10px 0 #151515;
 }
 main.day-main div.content-container div.timer-container h3 {
   font-size: 23px;
-  padding: 10px;
+  padding-top: 10px;
   color: rgba(255, 255, 255, 0.5);
 }
 main.day-main div.content-container div.timer-container h2, main.day-main div.content-container div.timer-container div.exercise-container p, main.day-main div.content-container div.exercise-container div.timer-container p {
@@ -554,6 +555,65 @@ main.day-main div.content-container div.buttons-container button:active {
   }
   main.day-main div.content-container div.timer-container div.timer-buttons-container button img {
     width: 66px;
+  }
+}
+
+main.workout-finished-main {
+  height: 100vh;
+  background-color: #252525;
+  color: white;
+  padding-top: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main.workout-finished-main h1 {
+  font-size: 26px;
+}
+main.workout-finished-main a {
+  width: 80%;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.workout-finished-main a button {
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  border: none;
+  font-size: 26px;
+  font-weight: 900;
+  background-color: #ae00e0;
+  box-shadow: 0 10px 0 0 #8200a7;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+main.workout-finished-main a button:hover {
+  background-color: #d749ff;
+}
+main.workout-finished-main a button:active {
+  box-shadow: 0 0 0 0 #8200a7;
+  transform: translateY(10px);
+}
+main.workout-finished-main a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  gap: 12px;
+}
+main.workout-finished-main a button img {
+  width: 28px;
+  transform: translateY(-4px);
+}
+@media (min-width: 1200px) {
+  main.workout-finished-main h1 {
+    font-size: 46px;
   }
 }
 

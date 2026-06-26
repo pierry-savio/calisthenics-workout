@@ -1,0 +1,42 @@
+main.workout-finished-main{
+    height: 100vh;
+    background-color: $mid-gray;
+    color: white;
+    padding-top: 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h1{
+        font-size: 26px;
+    }
+
+    a{
+        width: 80%;
+        @include resetTextDecorations();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            @include button($purple, $dark-purple, $light-purple);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            gap: 12px;
+            img{
+                width: 28px;
+                transform: translateY(-4px);
+            }
+        }
+    }
+
+    @media (min-width: 1200px){
+        h1{
+            font-size: 46px;
+        }
+    }
+}
