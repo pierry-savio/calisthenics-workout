@@ -70,12 +70,14 @@ const exerciseRepetitions =
     "15 Repetições",
     "10 Minutos"
 ];
-
+const restUrl = "https://www.youtube.com/embed/J0shA9J-4Nc?si=lJ4MEqn3A4Q9Acxy";
 const exerciseVideos = 
 [
-    "",
-    "",
-    ""
+    "https://www.youtube.com/embed/J54MUf4HKjY?si=lyOx5BN0GYEoHG4K",
+    restUrl,
+    "https://www.youtube.com/embed/fnDfukH5t4Q?si=XzSDi814dpa3eaxe",
+    restUrl
+
 ];
 
 //ONLY IN SECONDS
@@ -125,6 +127,11 @@ const timer = setInterval(() => {
     }
 }, 1000);
 
+function updateVideo(url){
+    const video = document.getElementById("video");
+    video.src = exerciseVideos[currentExercise];
+}
+
 //Current exercise display
 function updateDisplay(){
     const display = document.getElementById("display");
@@ -158,6 +165,7 @@ updateTimerTime();
 updateExercise();
 updateDisplay();
 updateCurrentTimer();
+updateVideo();
 
 //Previous and next buttons
 const previous_button = document.getElementById("previous_button");
@@ -172,6 +180,7 @@ previous_button.addEventListener("click", () =>{
     updateExercise();
     toggleContainers();
     updateTimerTime();
+    updateVideo();
     paused = true;
     passedTime = 0;
     pause_button_icon.src = "../img/icons/play.png";
@@ -186,6 +195,7 @@ next_button.addEventListener("click", () =>{
     updateExercise();
     toggleContainers();
     updateTimerTime();
+    updateVideo();
     paused = true;
     passedTime = 0;
     pause_button_icon.src = "../img/icons/play.png";

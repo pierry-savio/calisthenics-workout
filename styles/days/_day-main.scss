@@ -3,7 +3,8 @@ main.day-main{
     background-color: $mid-gray;
     color: white;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);  
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 71px;
 
     div.video-container{
         width: 100%;

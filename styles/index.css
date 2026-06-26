@@ -405,6 +405,7 @@ main.day-main {
   color: white;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  padding-top: 71px;
 }
 main.day-main div.video-container {
   width: 100%;
