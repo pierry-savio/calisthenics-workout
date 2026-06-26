@@ -52,7 +52,7 @@ header nav img.opened {
 div.menu-mobile {
   position: fixed;
   top: 0;
-  transform: translateY(70px);
+  transform: translateY(69px);
   z-index: 998;
   display: block;
   box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.2);
@@ -459,6 +459,12 @@ main.day-main div.content-container div.timer-container {
   text-justify: center;
   overflow: hidden;
   border-radius: 8px;
+  width: 100%;
+}
+main.day-main div.content-container div.timer-container h3 {
+  font-size: 23px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
 }
 main.day-main div.content-container div.timer-container h2, main.day-main div.content-container div.timer-container div.exercise-container p, main.day-main div.content-container div.exercise-container div.timer-container p {
   font-size: 46px;
@@ -472,12 +478,12 @@ main.day-main div.content-container div.timer-container div.timer-buttons-contai
   background-color: #ae00e0;
   border: none;
   width: 100%;
-  padding: 20px 40px 20px 40px;
+  padding: 8px 40px 8px 40px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 main.day-main div.content-container div.timer-container div.timer-buttons-container button img {
-  width: 46px;
+  width: 36px;
 }
 main.day-main div.content-container div.timer-container div.timer-buttons-container button:hover {
   background-color: #d749ff;
