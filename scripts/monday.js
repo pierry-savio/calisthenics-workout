@@ -10,16 +10,65 @@ menu_button.addEventListener("click", () =>{
 //=================== MONDAY WORKOUT ===================//
 const exerciseNames = 
 [
-    "Flexão diamante",
+    //Warm-up
+    "Rotação de ombros",
+    "Rotação de punhos",
+    "Alongar peito",
+    "Alongar pernas",
     "Flexão inclinada",
-    "Flexão de punhos"
+
+    //Workout
+    "Flexão de joelhos",
+    "Flexão de joelhos",
+    "Flexão inclinada",
+    "Flexão inclinada",
+    "Tríceps banco",
+    "Tríceps banco",
+    "Tríceps banco",
+    "Abdominal",
+    "Abdominal",
+    "Abdominal",
+    "Abdominal",
+    "Agachamento",
+    "Agachamento",
+    "Agachamento búlgaro",
+    "Agachamento búlgaro",
+    "Elevação de calcanhar",
+    "Elevação de calcanhar",
+    "Elevação de calcanhar",
+    "Elevação de calcanhar",
+    "Bicicleta"
 ];
 
 const exerciseRepetitions = 
 [
-    10,
-    30,
-    10
+    //Warm-up repetitions
+    "30 Segundos",
+    "30 Segundos",
+    "10 Segundos",
+    "10 Segundos",
+    "10 Repetições",
+
+    "12 Repetições",
+    "12 Repetições",
+    "10 Repetições",
+    "10 Repetições",
+    "10 Repetições",
+    "10 Repetições",
+    "10 Repetições",
+    "12 Repetições",
+    "12 Repetições",
+    "12 Repetições",
+    "12 Repetições",
+    "15 Repetições",
+    "15 Repetições",
+    "8 Repetições",
+    "8 Repetições",
+    "15 Repetições",
+    "15 Repetições",
+    "15 Repetições",
+    "15 Repetições",
+    "10 Minutos"
 ];
 
 const exerciseVideos = 
@@ -32,9 +81,33 @@ const exerciseVideos =
 //ONLY IN SECONDS
 const exerciseRests = 
 [
+    //Warm-up rests
     10,
-    45,
-    120
+    10,
+    10,
+    10,
+    60,
+
+    60,
+    60,
+    120,
+    120,
+    120,
+    120,
+    120,
+    60,
+    60,
+    60,
+    60,
+    90,
+    90,
+    120,
+    120,
+    60,
+    60,
+    60,
+    60,
+    60
 ];
 //=================== MONDAY WORKOUT ===================//
 
@@ -66,7 +139,7 @@ function updateExercise(){
     const exerciseName = document.getElementById("exerciseName");
     const exerciseRepetition = document.getElementById("exerciseRepetition");
     exerciseName.textContent = exerciseNames[currentExercise/2];
-    exerciseRepetition.textContent = exerciseRepetitions[currentExercise/2] + " Repetições"
+    exerciseRepetition.textContent = exerciseRepetitions[currentExercise/2];
 }
 
 function updateTimerTime(){
