@@ -4,7 +4,7 @@
 
 Site personalizado de acompanhamento de treinos de calistenia, desenvolvido para organizar e apresentar a rotina semanal de treinos de forma simples e visual.
 
-👉 [Teste clicando aqui 🔗](https://google.com)
+👉 [Teste clicando aqui 🔗](https://pierry-savio.github.io/calisthenics-workout/#workout)
 
 ## 📋 Sobre o Projeto
 
