@@ -43,17 +43,25 @@
                 referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen>
             </iframe>
-            <p class="weekday">SEGUNDA</p>
+            <p class="display" id="display">1 / 10</p>
         </div>
         <div class="content-container">
-            <div class="exercise-container">
-                <h2 class="exercise">FLEXÃO DIAMANTE</h2>
-                <p class="repetitions">10 REPETIÇÕES</p>
+            <div class="exercise-container" id="exercise_container">
+                <h2 id="exerciseName">FLEXÃO DIAMANTE</h2>
+                <p id="exerciseRepetition">10 REPETIÇÕES</p>
+            </div>
+
+            <div class="timer-container closed" id="timer_container">
+                <h2 id="timer_time">00:30</h2>
+                <div class="timer-buttons-container">
+                    <button id="repeat_button"> <img src="../img/icons/repeat.png" alt="Reiniciar"></button>
+                    <button id="pause_button"><img src="../img/icons/play.png" alt="Começar" id="pause_button_icon"></button>
+                </div>
             </div>
 
             <div class="buttons-container">
-                <button class="previous">VOLTAR</button>
-                <button class="next">PRÓXIMO</button>
+                <button class="previous" id="previous_button">VOLTAR</button>
+                <button class="next" id="next_button">PRÓXIMO</button>
             </div>
         </div>
     </main>
