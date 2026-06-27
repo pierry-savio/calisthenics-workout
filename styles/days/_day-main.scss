@@ -164,3 +164,62 @@ main.day-main{
         }
     }
 }
+
+div.popup-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.3s ease;
+
+    div.popup-box{
+        background-color: $orange;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        align-items: center;
+        padding: 30px;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px 0 black;
+        color: white;
+        
+        p{
+            font-size: 20px;
+        }
+        button{
+            color: white;
+            width: 100%;
+            border: 1px solid rgb(255, 255, 255);
+            background-color: transparent;
+            border-radius: 50px;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+
+            &:active{
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}
+
+div.popup-container.closed{
+    opacity: 0;
+    pointer-events: none;
+}

@@ -143,11 +143,34 @@ let passedTime = 0;
 let exercisesLength = exerciseNames.length*2;
 let paused = true;
 
+//Sound alarm
+const alarm = new Audio('../sound/alarm.MP3');
+
+//POP-UP
+const ok_buttton = document.getElementById("ok_buttton");
+const popup_container = document.getElementById("popup_container");
+ok_buttton.addEventListener("click", () =>{
+    popup_container.classList.add("closed");
+    passedTime = 0;
+    paused = true;
+    const pause_button_icon = document.getElementById("pause_button_icon");
+    pause_button_icon.src = "../img/icons/play.png";
+    alarm.pause();
+    alarm.currentTime = 0;
+    updateTimerTime();
+});
+
 const timer = setInterval(() => {
     if (!paused && passedTime < exerciseRests[(currentExercise-1)/2]){
         passedTime++;
         updateTimerTime();
         console.log(currentTimer);
+    }
+    else if (currentTimer < 1){
+        popup_container.classList.remove("closed");
+        if (alarm.paused){
+            alarm.play();
+        }
     }
 }, 1000);
 
