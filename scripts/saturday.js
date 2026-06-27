@@ -18,33 +18,33 @@ const exerciseNames =
     "Flexão inclinada",
 
     //Workout
-    "Flexão de joelhos",
-    "Flexão de joelhos",
-    "Flexão inclinada",
-    "Flexão inclinada",
-    "Tríceps banco",
-    "Tríceps banco",
-    "Tríceps banco",
-    "Abdominal remador",
-    "Abdominal remador",
-    "Abdominal remador",
-    "Abdominal remador",
-    "Passada alternada",
-    "Passada alternada",
-    "Passada alternada",
-    "Passada alternada",
-    "Agachamento",
-    "Agachamento",
-    "Agachamento",
-    "Agachamento",
-    "Elevação de calcanhar",
-    "Elevação de calcanhar",
-    "Elevação de calcanhar",
-    "Elevação de calcanhar",
+    "Flexão de joelhos - 1/2",
+    "Flexão de joelhos - 2/2",
+    "Flexão inclinada - 1/2",
+    "Flexão inclinada - 2/2",
+    "Tríceps banco - 1/3",
+    "Tríceps banco - 2/3",
+    "Tríceps banco - 3/3",
+    "Abdominal remador - 1/4",
+    "Abdominal remador - 2/4",
+    "Abdominal remador - 3/4",
+    "Abdominal remador - 4/4",
+    "Passada alternada - 1/4",
+    "Passada alternada - 2/4",
+    "Passada alternada - 3/4",
+    "Passada alternada - 4/4",
+    "Agachamento - 1/4",
+    "Agachamento - 2/4",
+    "Agachamento - 3/4",
+    "Agachamento - 4/4",
+    "Elevação de calcanhar - 1/4",
+    "Elevação de calcanhar - 2/4",
+    "Elevação de calcanhar - 3/4",
+    "Elevação de calcanhar - 4/4",
     "Bicicleta"
 ];
 
-const restUrl = "https://www.youtube.com/embed/J0shA9J-4Nc?si=lJ4MEqn3A4Q9Acxy";
+const restUrl = "https://www.youtube.com/embed/cLTEJqAqlYw?si=OvQvUjzeab1qyFFC";
 const exerciseVideos = 
 [
     //Warm-up

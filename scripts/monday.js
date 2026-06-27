@@ -18,29 +18,29 @@ const exerciseNames =
     "Flexão inclinada",
 
     //Workout
-    "Flexão de joelhos",
-    "Flexão de joelhos",
-    "Flexão inclinada",
-    "Flexão inclinada",
-    "Tríceps banco",
-    "Tríceps banco",
-    "Tríceps banco",
-    "Abdominal",
-    "Abdominal",
-    "Abdominal",
-    "Abdominal",
-    "Agachamento",
-    "Agachamento",
-    "Agachamento búlgaro",
-    "Agachamento búlgaro",
-    "Elevação de calcanhar",
-    "Elevação de calcanhar",
-    "Elevação de calcanhar",
-    "Elevação de calcanhar",
+    "Flexão de joelhos - 1/2",
+    "Flexão de joelhos - 2/2",
+    "Flexão inclinada - 1/2",
+    "Flexão inclinada - 2/2",
+    "Tríceps banco - 1/3",
+    "Tríceps banco - 2/3",
+    "Tríceps banco - 3/3",
+    "Abdominal - 1/4",
+    "Abdominal - 2/4",
+    "Abdominal - 3/4",
+    "Abdominal - 4/4",
+    "Agachamento - 1/2",
+    "Agachamento - 2/2",
+    "Agachamento búlgaro - 1/2",
+    "Agachamento búlgaro - 2/2",
+    "Elevação de calcanhar - 1/4",
+    "Elevação de calcanhar - 2/4",
+    "Elevação de calcanhar - 3/4",
+    "Elevação de calcanhar - 4/4",
     "Bicicleta"
 ];
 
-const restUrl = "https://www.youtube.com/embed/J0shA9J-4Nc?si=lJ4MEqn3A4Q9Acxy";
+const restUrl = "https://www.youtube.com/embed/cLTEJqAqlYw?si=OvQvUjzeab1qyFFC";
 const exerciseVideos = 
 [
     //Warm-up

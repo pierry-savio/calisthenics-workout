@@ -14,7 +14,7 @@ const exerciseNames =
     "Treino de quinta"
 ];
 
-const restUrl = "https://www.youtube.com/embed/J0shA9J-4Nc?si=lJ4MEqn3A4Q9Acxy";
+const restUrl = "https://www.youtube.com/embed/cLTEJqAqlYw?si=OvQvUjzeab1qyFFC";
 const exerciseVideos = 
 [
     //Warm-up
